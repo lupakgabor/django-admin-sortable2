@@ -27,7 +27,8 @@ class SortableAdminBase(object):
     def media(self):
         css = {'all': ('adminsortable2/css/sortable.css',)}
         js = (
-            'adminsortable2/js/plugins/admincompat.js',
+            'http://code.jquery.com/jquery-1.9.1.js',
+	    'adminsortable2/js/plugins/admincompat.js',
             'adminsortable2/js/libs/jquery.ui.core-1.11.4.js',
             'adminsortable2/js/libs/jquery.ui.widget-1.11.4.js',
             'adminsortable2/js/libs/jquery.ui.mouse-1.11.4.js',
