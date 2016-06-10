@@ -20,7 +20,7 @@ jQuery.extend({
 jQuery(function($) {
 	var startindex, startorder, endindex, endorder;
 	var csrfvalue = $('form').find('input[name="csrfmiddlewaretoken"]').val();
-	var ordering = 	var ordering = $.getQueryParams()['o'];
+ 	var ordering = $.getQueryParams()['o'];
 	if (window.admin_sortable2 === undefined)
 		return;  // global variables not initialized by change_list.html
 	if (ordering === undefined) {
